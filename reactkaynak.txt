@@ -1,0 +1,12 @@
+Templateler
+https://www.w3schools.com/w3css/w3css_templates.asp
+
+Transform html to react
+https://magic.reactjs.net/htmltojsx.htm
+https://transform.tools/html-to-jsx
+
+Chrome Ext
+https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+
+Kaynaklar
+https://developer.mozilla.org/tr/docs/Web/JavaScript/Reference/Functions/Arrow_functions
