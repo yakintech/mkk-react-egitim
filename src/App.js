@@ -12,6 +12,8 @@ import Csssample2 from "./Csssample2";
 import Jsxsample from "./Jsxsample";
 import Categoryselect from "./components/Categoryselect";
 import Statesample from "./Statesample";
+import Statesample2 from "./Statesample2";
+import Statesample3 from "./Statesample3";
 
 
 
@@ -32,7 +34,8 @@ function App() {
 
   return (
     <>
-      <Statesample></Statesample>
+    <Statesample3></Statesample3>
+      {/* <Statesample></Statesample> */}
       {/* <Jsxsample></Jsxsample> */}
       {/* <Csssample></Csssample>
     <Csssample2></Csssample2> */}
