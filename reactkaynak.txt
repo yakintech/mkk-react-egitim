@@ -10,3 +10,12 @@ https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopl
 
 Kaynaklar
 https://developer.mozilla.org/tr/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+https://medium.com/@dmitrynozhenko/9-ways-to-implement-css-in-react-js-ccea4d543aa3
+https://medium.com/frontend-development-with-js/react-ile-dom-kullan%C4%B1m%C4%B1-ea122d63eb7d
+https://www.w3schools.com/js/js_array_methods.asp
+
+
+
+Paketler
+https://www.npmjs.com/package/styled-components

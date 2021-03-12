@@ -7,20 +7,40 @@ import EContent from "./emlaksite/EContent";
 import EFooter from "./emlaksite/EFooter";
 import EHeader from "./emlaksite/EHeader";
 import ENavbar from "./emlaksite/ENavbar";
+import Csssample from "./Csssample";
+import Csssample2 from "./Csssample2";
 import Jsxsample from "./Jsxsample";
+import Categoryselect from "./components/Categoryselect";
+import Statesample from "./Statesample";
 
 
 
 function App() {
 
+  let menus = [
+    { name: 'Projects', link: '#projects' },
+    { name: 'About', link: '#about' },
+    { name: 'Contact', link: '#contact' },
+  ]
+
+  let categories = [
+    { id: 1, name: 'Elektronik' },
+    { id: 2, name: 'Kamp Malzemeleri' },
+    { id: 3, name: 'Spor' }
+
+  ]
+
   return (
     <>
-    {/* <Jsxsample></Jsxsample> */}
-
-    <ENavbar/>
-    <EHeader/>
-    <EContent/>
-    <EFooter/>
+      <Statesample></Statesample>
+      {/* <Jsxsample></Jsxsample> */}
+      {/* <Csssample></Csssample>
+    <Csssample2></Csssample2> */}
+      {/* <Categoryselect data={categories}></Categoryselect> */}
+      {/* <ENavbar logotitle='Merkezi Kayıt Kurumu' menu={menus}/>
+      <EHeader />
+      <EContent />
+      <EFooter /> */}
       {
         // Hamburger Site Template
         /* <HNavbar></HNavbar>
