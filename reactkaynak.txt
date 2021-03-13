@@ -8,6 +8,9 @@ https://transform.tools/html-to-jsx
 Chrome Ext
 https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
 
+JSON View Ext
+https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=tr
+
 Kaynaklar
 https://developer.mozilla.org/tr/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
@@ -30,6 +33,12 @@ Public API Listesi
 https://northwind.now.sh/api/products
 https://jsonplaceholder.typicode.com/
 https://ergast.com/api/f1/2004/1/results.json
+
+
+//Eski React Sürümü hook karşılaştırma
+https://tr.reactjs.org/docs/react-component.html
+https://tr.reactjs.org/docs/hooks-overview.html#effect-hook
+
 
 
 

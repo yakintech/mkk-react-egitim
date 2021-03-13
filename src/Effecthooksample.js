@@ -14,6 +14,8 @@ function Effecthooksample() {
 
     //HERHANGİ bir state değiştiğinde
     useEffect(() => {
+        //Sonsuz state güncellemelerine dikkat!!
+        //setsayac(sayac + 3);
         console.log('Componentte herhangi bir state değişimi meydana geldi');
     });
 
