@@ -22,3 +22,7 @@ Paketler
 https://www.npmjs.com/package/styled-components
 https://lodash.com/
 
+Videolar
+https://www.youtube.com/watch?v=Vp4K03xWsgE
+
+

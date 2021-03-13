@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+
+
+    function getDataFromApi(url, err, success) {
+
+        try {
+            const todos = [];
+
+            if (url == 'api/todos') {
+
+                todos.push({ id: 1, title: 'todo1' });
+                todos.push({ id: 2, title: 'todo2' });
+
+                success(todos);
+            }
+            else if (url == null || url == undefined || url == '') {
+                throw new Error('Sunucuda bir hata meydana geldi');
+            }
+            else {
+                err(404);
+            }
+
+        } catch (error) {
+            err(500);
+        }
+
+    }
+
+
+    function reject(statuscode) {
+        console.log('Error code: ', statuscode);
+    }
+
+    function resolve(data) {
+        console.log('response ', data);
+    }
+
+    // Success durumu
+    // getDataFromApi('api/todos',reject,resolve);
+
+    //404 durumu
+    //getDataFromApi('api/todos/3', reject, resolve);
+
+    //500 durumu
+    getDataFromApi(null,reject,resolve);
+
+    //Callback dezavantajlar
+    // Beklenenden erken çağırılma veya hiç çağırılmama
+    // Gerekli parametrelerin doğru tanımlanamaması
+
+
+</script>

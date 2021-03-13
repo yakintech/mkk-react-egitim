@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+
+    async function Merhaba2() {
+        return "Merhaba js - 2";
+    }
+
+    let data2 = Merhaba2();
+
+    data2.then((result) => {
+        console.log(result);
+    })
+        .catch((err) => {
+            console.log(err);
+        })
+
+    function Merhaba() {
+        return "Merhaba js";
+    }
+    let data = Merhaba();
+
+
+
+
+    async function GetData() {
+        let users = [{ id: 1, name: 'Çağatay' }, { id: 2, name: 'Ayşe' }, { id: 3, name: 'Ahmet' }];
+        return users;
+    }
+
+
+    //await kelimesi sadece async fonksiyonlar içerisinde kullanılır.
+
+    async function IslemSonuc() {
+
+        let result = await GetData();
+
+        let kisi = { id: 4, name: 'Mert' };
+
+        result.push(kisi);
+
+        return result;
+
+    }
+
+    IslemSonuc().then((res) => {
+        console.log(res);
+    });
+
+
+
+
+    const getproducts = async () => {
+        return [{ name: 'Iphone', price: 3333 }, { name: 'Samsung', price: 4444 }]
+    }
+
+
+    getproducts().then((data) => {
+        console.log(data);
+    })
+
+</script>
