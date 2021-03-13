@@ -18,6 +18,7 @@ https://medium.com/@dmitrynozhenko/9-ways-to-implement-css-in-react-js-ccea4d543
 https://medium.com/frontend-development-with-js/react-ile-dom-kullan%C4%B1m%C4%B1-ea122d63eb7d
 https://www.w3schools.com/js/js_array_methods.asp
 https://love2dev.com/blog/javascript-remove-from-array/
+https://caniuse.com/
 
 
 
