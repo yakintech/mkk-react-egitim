@@ -17,6 +17,7 @@ import Statesample3 from "./Statesample3";
 import Effecthooksample from "./Effecthooksample";
 import Categorylistsample from "./Categorylistsample";
 import Productcrud from "./fetchsamples/Productcrud";
+import Categorycrud from "./fetchsamples/Categorycrud";
 
 
 
@@ -37,7 +38,8 @@ function App() {
 
   return (
     <>
-    <Productcrud></Productcrud>
+    <Categorycrud></Categorycrud>
+    {/* <Productcrud></Productcrud> */}
     {/* <Categorylistsample></Categorylistsample> */}
     {/* <Effecthooksample></Effecthooksample> */}
     {/* <Statesample3></Statesample3> */}

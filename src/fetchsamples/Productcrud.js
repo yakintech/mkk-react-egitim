@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import _ from 'lodash'
 
 function Productcrud() {
 
@@ -7,7 +8,7 @@ function Productcrud() {
     const [allproducts, setglobalproducts] = useState([]);
     const [productdetail, setproductdetail] = useState({});
     const [loading, setloading] = useState(true);
-
+    const [orderby, setorderby] = useState('asc');
 
     const productapiurl = 'https://northwind.now.sh/api/products/';
     const categoryapiurl = 'https://northwind.now.sh/api/categories';
@@ -21,7 +22,9 @@ function Productcrud() {
             .then((res) => res.json())
             .then((data) => {
                 setglobalproducts(data);
-                setproducts(data);
+                let orderproducts = _.orderBy(data, ['name'], [orderby]);
+                //chars = _.orderBy(chars, ['name'],['asc']);
+                setproducts(orderproducts);
                 setloading(false);
             });
 
@@ -66,6 +69,24 @@ function Productcrud() {
                 console.log(data);
                 setproductdetail(data);
             })
+    };
+
+
+    const orderName = () => {
+        let orderproducts = [];
+        if (orderby == 'asc') {
+            setorderby('desc');
+            orderproducts = _.orderBy(allproducts, ['name'], ['desc']);
+
+        }
+        else {
+            setorderby('asc');
+            orderproducts = _.orderBy(allproducts, ['name'], ['asc']);
+
+        }
+
+        setproducts(orderproducts);
+
     }
 
     return (
@@ -79,7 +100,7 @@ function Productcrud() {
                         }
                     </select>
                 </div>
-                <div style={{display:'flex'}}>
+                <div style={{ display: 'flex' }}>
 
                     <div>
                         {
@@ -88,7 +109,7 @@ function Productcrud() {
                                     <thead>
                                         <tr>
                                             <td>ID</td>
-                                            <td>Name</td>
+                                            <td style={{ cursor: 'pointer' }} onClick={() => orderName()}>Name</td>
                                             <td>Price</td>
                                             <td>Category ID</td>
                                             <td>Supplier's Company Name</td>
@@ -119,7 +140,7 @@ function Productcrud() {
                     {
                         (
                             <>
-                                <div style={{marginTop:'5%'}}>
+                                <div style={{ marginTop: '5%' }}>
                                     <h3>Product Detail</h3>
                                     <p>quantityPerUnit: {productdetail.quantityPerUnit} </p>
                                     <p>unitsInStock: {productdetail.unitsInStock} </p>
