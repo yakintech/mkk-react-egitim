@@ -26,3 +26,11 @@ Videolar
 https://www.youtube.com/watch?v=Vp4K03xWsgE
 
 
+Public API Listesi
+https://northwind.now.sh/api/products
+https://jsonplaceholder.typicode.com/
+https://ergast.com/api/f1/2004/1/results.json
+
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //fetch http kanalından get, post, put vb. istekleri yönetmemi sağlayan js yapısı
+
+    fetch('https://northwind.now.sh/api/categories')
+    .then((res)=> res.json())
+    .then((data)=>{
+        console.log(data);
+    });
+
+    let user = new Object();
+    user.name = 'Çağatay';
+    user.surname='Yıldız';
+    user.platforms = ['.Net','Nodejs'];
+
+    console.log(user);
+
+    //js objesini JSON a çevirdim
+    let user2 = JSON.stringify(user);
+    console.log(JSON.stringify(user2));
+
+
+    //JSON objesini js objesine çeviren metot
+    let user3 = JSON.parse(user2);
+    console.log(user3);
+
+    //JSON - Javascript Object
+    //JSON - Csharp Entity
+
+
+
+</script>

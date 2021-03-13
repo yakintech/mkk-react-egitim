@@ -14,6 +14,7 @@ import Categoryselect from "./components/Categoryselect";
 import Statesample from "./Statesample";
 import Statesample2 from "./Statesample2";
 import Statesample3 from "./Statesample3";
+import Effecthooksample from "./Effecthooksample";
 
 
 
@@ -34,7 +35,8 @@ function App() {
 
   return (
     <>
-    <Statesample3></Statesample3>
+    <Effecthooksample></Effecthooksample>
+    {/* <Statesample3></Statesample3> */}
       {/* <Statesample></Statesample> */}
       {/* <Jsxsample></Jsxsample> */}
       {/* <Csssample></Csssample>
