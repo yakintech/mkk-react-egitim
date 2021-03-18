@@ -22,7 +22,8 @@ import {
   BrowserRouter,
   Switch,
   Route,
-  Link
+  Link,
+  Router
 } from "react-router-dom";
 import Homepage from './Routesample/Homepage'
 import Aboutpage from './Routesample/Aboutpage'
@@ -31,8 +32,13 @@ import Productlistpage from "./Routesample/Productlistpage";
 import Productdetailpage from "./Routesample/Productdetailpage";
 import Footerpage from "./Routesample/Footerpage";
 import Nomatch from "./Routesample/Nomatch";
-import Userlist from "./axiossample/Userlist";
+import Userlist from "./contextsample/Userlist";
 import Userdetail from "./axiossample/Userdetail";
+import Addprice from "./contextsample/Addprice";
+import Pricetable from "./contextsample/Pricetable";
+import { PriceProvider } from './context/Pricecontext'
+import { Userprovider } from './context/Usercontext'
+import Adduser from "./contextsample/Adduser";
 
 
 function App() {
@@ -53,10 +59,31 @@ function App() {
   return (
     <>
 
-      <BrowserRouter>
+      <PriceProvider>
+        <Userprovider>
+          <BrowserRouter>
+
+            <Route path='/Adduser'>
+              <Adduser></Adduser>
+            </Route>
+
+            <Route path='/Userlist'>
+              <Userlist></Userlist>
+            </Route>
+
+          </BrowserRouter>
+        </Userprovider>
+      </PriceProvider>
 
 
 
+
+
+      {/* <PriceProvider>
+        <Addprice></Addprice>
+        <Pricetable></Pricetable>
+      </PriceProvider> */}
+      {/* <BrowserRouter>
         <Route exact path='/Users'>
           <Userlist></Userlist>
         </Route>
@@ -64,15 +91,7 @@ function App() {
         <Route path='/Users/:id'>
           <Userdetail></Userdetail>
         </Route>
-
-
-      </BrowserRouter>
-
-
-
-
-
-
+      </BrowserRouter> */}
 
       {/* Route ları sırayla okuyor. exact anahtar kelimesinin önemi
       <BrowserRouter>
