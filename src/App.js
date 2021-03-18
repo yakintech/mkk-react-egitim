@@ -29,6 +29,10 @@ import Aboutpage from './Routesample/Aboutpage'
 import Contactpage from './Routesample/Contactpage'
 import Productlistpage from "./Routesample/Productlistpage";
 import Productdetailpage from "./Routesample/Productdetailpage";
+import Footerpage from "./Routesample/Footerpage";
+import Nomatch from "./Routesample/Nomatch";
+import Userlist from "./axiossample/Userlist";
+import Userdetail from "./axiossample/Userdetail";
 
 
 function App() {
@@ -49,7 +53,28 @@ function App() {
   return (
     <>
 
-      {/* Route ları sırayla okuyor. exact anahtar kelimesinin önemi */}
+      <BrowserRouter>
+
+
+
+        <Route exact path='/Users'>
+          <Userlist></Userlist>
+        </Route>
+
+        <Route path='/Users/:id'>
+          <Userdetail></Userdetail>
+        </Route>
+
+
+      </BrowserRouter>
+
+
+
+
+
+
+
+      {/* Route ları sırayla okuyor. exact anahtar kelimesinin önemi
       <BrowserRouter>
 
 
@@ -90,16 +115,17 @@ function App() {
 
           <Route path='/Productlist'>
             <Productlistpage></Productlistpage>
-          </Route>
+          </Route> */}
 
-         
+      {/* Herhangi bir route ile eşleşmediği durumlarda 404 sayfası olarak aşağıdaki blok çalışır */}
+      {/* <Route path='*'>
+            <Nomatch></Nomatch>
+          </Route>
 
         </Switch>
 
-      </BrowserRouter>
-
-
-
+        <Footerpage></Footerpage>
+      </BrowserRouter> */}
       {/* <Categorycrud></Categorycrud> */}
       {/* <Productcrud></Productcrud> */}
       {/* <Categorylistsample></Categorylistsample> */}

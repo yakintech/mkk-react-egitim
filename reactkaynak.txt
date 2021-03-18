@@ -26,6 +26,8 @@ Paketler
 https://www.npmjs.com/package/styled-components
 https://lodash.com/ 
 https://reactrouter.com/  ( route kütüphanesi)
+https://www.digitalocean.com/community/tutorials/react-axios-react
+
 
 Videolar
 https://www.youtube.com/watch?v=Vp4K03xWsgE
