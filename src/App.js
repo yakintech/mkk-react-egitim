@@ -18,7 +18,17 @@ import Effecthooksample from "./Effecthooksample";
 import Categorylistsample from "./Categorylistsample";
 import Productcrud from "./fetchsamples/Productcrud";
 import Categorycrud from "./fetchsamples/Categorycrud";
-
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Homepage from './Routesample/Homepage'
+import Aboutpage from './Routesample/Aboutpage'
+import Contactpage from './Routesample/Contactpage'
+import Productlistpage from "./Routesample/Productlistpage";
+import Productdetailpage from "./Routesample/Productdetailpage";
 
 
 function App() {
@@ -38,11 +48,63 @@ function App() {
 
   return (
     <>
-    <Categorycrud></Categorycrud>
-    {/* <Productcrud></Productcrud> */}
-    {/* <Categorylistsample></Categorylistsample> */}
-    {/* <Effecthooksample></Effecthooksample> */}
-    {/* <Statesample3></Statesample3> */}
+
+      {/* Route ları sırayla okuyor. exact anahtar kelimesinin önemi */}
+      <BrowserRouter>
+
+
+        <ul>
+          <li>
+            <Link to='/'>Home</Link>
+          </li>
+          <li>
+            <Link to='/About'>About</Link>
+          </li>
+          <li>
+            <Link to='/Contact'>Contact</Link>
+          </li>
+          <li>
+            <Link to='/Productlist'>Products</Link>
+          </li>
+        </ul>
+
+
+        <Switch>
+
+          <Route exact path='/'>
+            <Homepage></Homepage>
+          </Route>
+
+          <Route exact path='/Product/Detail/:id'>
+            <Productdetailpage></Productdetailpage>
+          </Route>
+
+
+          <Route path='/About'>
+            <Aboutpage></Aboutpage>
+          </Route>
+
+          <Route path='/Contact'>
+            <Contactpage></Contactpage>
+          </Route>
+
+          <Route path='/Productlist'>
+            <Productlistpage></Productlistpage>
+          </Route>
+
+         
+
+        </Switch>
+
+      </BrowserRouter>
+
+
+
+      {/* <Categorycrud></Categorycrud> */}
+      {/* <Productcrud></Productcrud> */}
+      {/* <Categorylistsample></Categorylistsample> */}
+      {/* <Effecthooksample></Effecthooksample> */}
+      {/* <Statesample3></Statesample3> */}
       {/* <Statesample></Statesample> */}
       {/* <Jsxsample></Jsxsample> */}
       {/* <Csssample></Csssample>
