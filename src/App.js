@@ -39,6 +39,10 @@ import Pricetable from "./contextsample/Pricetable";
 import { PriceProvider } from './context/Pricecontext'
 import { Userprovider } from './context/Usercontext'
 import Adduser from "./contextsample/Adduser";
+import 'antd/dist/antd.css';
+import Introant from "./antdesignsample/Introant";
+import Antproductlist from "./antdesignsample/Antproductlist";
+import Antaddcategory from "./antdesignsample/Antaddcategory";
 
 
 function App() {
@@ -59,7 +63,11 @@ function App() {
   return (
     <>
 
-      <PriceProvider>
+      <Antaddcategory></Antaddcategory>
+      {/* <Antproductlist></Antproductlist> */}
+      {/* <Introant></Introant> */}
+
+      {/* <PriceProvider>
         <Userprovider>
           <BrowserRouter>
 
@@ -73,11 +81,7 @@ function App() {
 
           </BrowserRouter>
         </Userprovider>
-      </PriceProvider>
-
-
-
-
+      </PriceProvider> */}
 
       {/* <PriceProvider>
         <Addprice></Addprice>
