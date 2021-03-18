@@ -63,7 +63,8 @@ function App() {
   return (
     <>
 
-      <Antaddcategory></Antaddcategory>
+      <Antproductlist></Antproductlist>
+      {/* <Antaddcategory></Antaddcategory> */}
       {/* <Antproductlist></Antproductlist> */}
       {/* <Introant></Introant> */}
 

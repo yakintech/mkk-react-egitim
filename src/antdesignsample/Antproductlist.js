@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Table, Spin } from 'antd'
+import { Table, Spin, Modal } from 'antd'
 
 function Antproductlist() {
 
     const [products, setproducts] = useState([]);
-    const [loading, setloading] = useState(true)
+    const [loading, setloading] = useState(true);
+    const [isModalVisible, setisModalVisible] = useState(false);
 
     useEffect(() => {
 
@@ -24,7 +25,7 @@ function Antproductlist() {
 
 
     const Gotodetail = (id) => {
-        console.log(id);
+        setisModalVisible(true);
     }
 
 
@@ -57,9 +58,17 @@ function Antproductlist() {
     ];
 
 
-
+    const okModal = () => {
+        setisModalVisible(false)
+    }
     return (
         <>
+            <Modal title="Basic Modal" visible={isModalVisible} onOk={() => okModal()} onCancel={() => okModal()} >
+                <p>Some contents...</p>
+                <p>Some contents...</p>
+                <p>Some contents...</p>
+            </Modal>
+
             <Spin tip="Loading..." spinning={loading}>
                 <Table columns={columns} dataSource={products}></Table>
             </Spin>
