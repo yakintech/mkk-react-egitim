@@ -57,8 +57,14 @@ https://preview.keenthemes.com/metronic/react/demo1/google-material/navigation/b
 https://pro.ant.design/
 
 
+JS Book
+https://github.com/getify/You-Dont-Know-JS
 
+ES Yenilikler
+https://github.com/lukehoban/es6features
 
+https://www.w3schools.com/js/default.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 
 
