@@ -29,6 +29,8 @@ https://lodash.com/
 https://reactrouter.com/  ( route kütüphanesi)
 https://www.digitalocean.com/community/tutorials/react-axios-react
 
+redux sample
+https://github.com/yakintech/redux-sample
 
 Videolar
 https://www.youtube.com/watch?v=Vp4K03xWsgE
