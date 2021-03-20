@@ -32,6 +32,11 @@ https://www.digitalocean.com/community/tutorials/react-axios-react
 
 Videolar
 https://www.youtube.com/watch?v=Vp4K03xWsgE
+(OWASP)
+https://www.youtube.com/watch?v=deEiUpnsmyA
+
+redux middleware
+https://github.com/reduxjs/redux-thunk
 
 
 Public API Listesi
@@ -46,6 +51,10 @@ https://tr.reactjs.org/docs/hooks-overview.html#effect-hook
 
 Admin Template
 https://themeforest.net/item/emilus-react-admin-template/28400277
+https://preview.keenthemes.com/metronic/react/demo1/google-material/navigation/bottom-navigation
+https://pro.ant.design/
+
+
 
 
 
